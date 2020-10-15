@@ -98,6 +98,7 @@ def NetStatistic(_download_rate, _upload_rate, _total_download, _total_upload, _
 
 #main function
 def main():
+	#read CONFIG.INI file then use it as parameter
 	config = configparser.ConfigParser()
 	config.read('CONFIG.INI')
 	kodeToko = config.get('toko', 'kode_toko')
